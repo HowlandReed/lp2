@@ -16,18 +16,13 @@ public class Ponto{
 		Ponto p1 = new Ponto();
 		p1.setX(10);
 		p1.setY(20);
-		System.out.println(p1.getX() + " - " + p1.getY());
 		Ponto p2 = new Ponto();
 		p2.setX(15);
 		p2.setY(30);
-		System.out.println(p2.getX() + " - " + p2.getY());
-		Ponto p3 = new Ponto();
-		p3.setX(50);
-		p3.setY(70);
-		p3 = p1;
-		System.out.println(p3.getX() + " - " + p3.getY());
-		Ponto p4 = p3;
-		System.out.println(p4.getX() + " - " + p4.getY());
-
+		double x12, y12, d;
+		x12 = (p1.getX() - p2.getX());
+		y12 = (p1.getY() - p2.getY());
+		d = Math.sqrt(Math.pow(x12, 2) + Math.pow(y12, 2));
+		System.out.println(d);
 	}
 }
